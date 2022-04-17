@@ -6,7 +6,7 @@
 
 
 ```bash
-Coming soon...
+https://py-cep.herokuapp.com/
 ```
 
     
