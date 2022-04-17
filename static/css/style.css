@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141315;
+}
+
+.center{
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1E1E24;
+    color: #FBFFFE;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.first img{
+    width: 50px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+}
+
+.second .submit-button{
+    width: 100%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.second .submit-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.second .input-data{
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #7C809B;
+    outline: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.second .input-data:focus{
+    outline: none;
+}
+
+.second p{
+    text-align: center;
+    margin-bottom: 10px;
+} 

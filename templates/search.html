@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\styleSearch.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <div class="first">
+            <h1>Cep Encontrado!</h1>
+            <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/device-laptop-icon.png" alt=""><br>
+        </div>
+        <div class="second">
+            <p>Cep escolhido: <b>{{cep.cep}}</b></p>
+            <p>Estado: <b>{{cep.uf}}</b></p>
+            <p>Cidade: <b>{{cep.cidade}}</b></p>
+            
+            {% if cep.bairro == "" %}
+                <p>Bairro: <b>Não Encontrado!</b></p>
+            {% else %}
+                <p>Bairro: <b>{{cep.bairro}}</b></p>
+            {% endif%}
+
+            {% if cep.rua == "" %}
+                <p>Rua: <b>Não encontrado!</b></p>
+            {% else %}
+                <p>Rua: <b>{{cep.rua}}</b></p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
